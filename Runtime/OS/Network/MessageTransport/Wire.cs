@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Networking.MessageTransport
+namespace OS.Network.MessageTransport
 {
 	public class Wire<T>
 		: IDisposable

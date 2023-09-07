@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 
-namespace Networking.MessageTransport
+namespace OS.Network.MessageTransport
 {
 	public class WireTerminalStream : Stream
 	{

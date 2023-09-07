@@ -1,4 +1,4 @@
-﻿namespace Networking
+﻿namespace OS.Network
 {
 	public enum SecurityLevel
 	{

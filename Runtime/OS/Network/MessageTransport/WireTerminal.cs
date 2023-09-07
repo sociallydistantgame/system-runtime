@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Networking.MessageTransport
+namespace OS.Network.MessageTransport
 {
 	public class WireTerminal<T> :
 			IDisposable,

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Networking
+namespace OS.Network
 {
 	[Flags]
 	public enum ServerTypeFlags
