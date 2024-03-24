@@ -15,6 +15,7 @@
 		AddedWorldFlags = 10,
 		DomainNames = 11,
 		LocalNetworkNarrativeIds = 12,
+		PublicIpsStoredInSave = 13,
 
 		Latest
 	}
