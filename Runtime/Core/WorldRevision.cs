@@ -16,6 +16,7 @@
 		DomainNames = 11,
 		LocalNetworkNarrativeIds = 12,
 		PublicIpsStoredInSave = 13,
+		PlayerIpStoredInSave = 14,
 
 		Latest
 	}
