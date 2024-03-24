@@ -9,10 +9,10 @@ namespace OS.Network
 	{
 		public static readonly Subnet LoopbackSubnet = new Subnet
 		{
-			NetworkAddress = 0x7f000000,
-			Mask = 0xfffffff0,
-			LowerRange = 0x7f000000,
-			HigherRange = 0x7f00000f
+			networkAddress = 0x7f000000,
+			mask = 0xfffffff0,
+			lowerRange = 0x7f000000,
+			higherRange = 0x7f00000f
 		};
 
 		public static uint LoopbackAddress => LoopbackSubnet.FirstHost;
@@ -159,10 +159,10 @@ namespace OS.Network
 
 			subnet = new Subnet
 			{
-				NetworkAddress = address & mask,
-				Mask = mask,
-				LowerRange = lowerRange,
-				HigherRange = higherRange
+				networkAddress = address & mask,
+				mask = mask,
+				lowerRange = lowerRange,
+				higherRange = higherRange
 			};
 			
 			return true;
