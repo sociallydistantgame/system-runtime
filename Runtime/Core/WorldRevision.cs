@@ -14,6 +14,7 @@
 		ChatAndSocialMedia = 9,
 		AddedWorldFlags = 10,
 		DomainNames = 11,
+		LocalNetworkNarrativeIds = 12,
 
 		Latest
 	}

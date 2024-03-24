@@ -38,6 +38,14 @@ namespace OS.Network
 				_ => ServerType.Unknown
 			};
 		}
+
+		public static long GetRandomMacAddress()
+		{
+			ushort firstPart = (ushort) UnityEngine.Random.Range(0, ushort.MaxValue);
+			uint secondPart = (uint) UnityEngine.Random.Range(0, uint.MaxValue);
+
+			return ((long) firstPart) | ((long) secondPart) << 32;
+		}
 		
 		public static bool TryParseNetworkAddress(string networkAddressString, out uint networkAddress)
 		{
