@@ -9,5 +9,6 @@ namespace Core
 		IWorldDataCallbacks Callbacks { get; }
 		
 		ObjectId GetNextObjectId();
+		string GetNextIspRange();
 	}
 }
