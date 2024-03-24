@@ -25,5 +25,9 @@ namespace OS.Network
 		/// <param name="address">The result of the address or hostname resolution. Will be 0 if resolution failed.</param>
 		/// <returns>True if the host was successfully resolved. False if DNS resolution failed or the IP string failed to parse.</returns>
 		bool Resolve(string host, out uint address);
+
+		Task<PortScanResult> ScanPort(uint address, ushort port);
+
+		bool IsListening(ushort port);
 	}
 }

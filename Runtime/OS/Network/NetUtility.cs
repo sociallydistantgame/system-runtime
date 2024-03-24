@@ -16,6 +16,28 @@ namespace OS.Network
 		};
 
 		public static uint LoopbackAddress => LoopbackSubnet.FirstHost;
+
+		public static ServerType DetectServerType(ushort port)
+		{
+			return port switch
+			{
+				80 => ServerType.Web,
+				443 => ServerType.WebSecured,
+				21 => ServerType.FileTransfer,
+				22 => ServerType.Shell,
+				3389 => ServerType.Database,
+				5432 => ServerType.Database,
+				3900 => ServerType.Desktop,
+				25 => ServerType.Email,
+				465 => ServerType.Email,
+				587 => ServerType.Email,
+				10060 => ServerType.GameServer,
+				10061 => ServerType.GameServer,
+				6667 => ServerType.Chat,
+				6697 => ServerType.Chat,
+				_ => ServerType.Unknown
+			};
+		}
 		
 		public static bool TryParseNetworkAddress(string networkAddressString, out uint networkAddress)
 		{
