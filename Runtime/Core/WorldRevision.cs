@@ -13,6 +13,7 @@
 		Lifepaths = 8,
 		ChatAndSocialMedia = 9,
 		AddedWorldFlags = 10,
+		DomainNames = 11,
 
 		Latest
 	}
