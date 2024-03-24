@@ -8,6 +8,8 @@ namespace OS.Network
 {
 	public interface INetworkConnection : INetworkInterfaceEnumerator
 	{
+		bool Connected { get; }
+		
         // restitch-needed: This is a Unity coroutine and can't be called by mods. Switch to a Task<PingResult> instead.
 		Task<PingResult> Ping(uint address, float timeout);
 
