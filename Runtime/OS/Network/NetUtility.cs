@@ -7,6 +7,12 @@ namespace OS.Network
 {
 	public static class NetUtility
 	{
+		/// <summary>
+		///		The maximum number of packets a given network node will process during a single simulation update.
+		///		Queueing more than this amount of packets before the next simulation update may cause the game to lag.
+		/// </summary>
+		public const int MaxPacketsPerSimulation = 1024;
+		
 		public static readonly Subnet LoopbackSubnet = new Subnet
 		{
 			networkAddress = 0x7f000000,
