@@ -29,5 +29,7 @@ namespace OS.Network
 		Task<PortScanResult> ScanPort(uint address, ushort port);
 
 		bool IsListening(ushort port);
+
+		string GetHostName(uint address);
 	}
 }
