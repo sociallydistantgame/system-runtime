@@ -11,7 +11,7 @@ namespace OS.Network
 		bool Connected { get; }
 		
         // restitch-needed: This is a Unity coroutine and can't be called by mods. Switch to a Task<PingResult> instead.
-		Task<PingResult> Ping(uint address, float timeout);
+		Task<PingResult> Ping(uint address, float timeout, bool acceptVoidPackets);
 
 		// restitch-needed: This is a Unity coroutine and can't be called by mods. Switch to a Task<PingResult> instead.
 		Task<ConnectionResult> Connect(uint remoteAddress, ushort remotePort);

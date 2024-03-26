@@ -6,6 +6,7 @@ namespace OS.Network
 	/// </summary>
 	public interface IHostNameResolver
 	{
+		bool IsValidSubnet(uint address);
 		string? ReverseHostLookup(uint networkAddress);
 		uint? HostLookup(string hostname);
 	}

@@ -42,5 +42,16 @@ namespace OS.Network
 			networkAddress = reader.Read_uint();
 			mask = reader.Read_uint();
 		}
+
+		public static Subnet FromAddressAndMask(uint address, uint mask)
+		{
+			var subnet = new Subnet
+			{
+				mask = mask,
+				networkAddress = address & mask
+			};
+			
+			return subnet;
+		}
 	}
 }

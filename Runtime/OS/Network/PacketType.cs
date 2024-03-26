@@ -12,6 +12,7 @@ namespace OS.Network
 		Refusal,
 		IcmpPing,
 		IcmpAck,
-		IcmpReject
+		IcmpReject,
+		Void
 	}
 }
